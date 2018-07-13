@@ -1,0 +1,152 @@
+
+a:hover{
+    text-decoration: none;
+}
+img{
+    display: block;   /*变成块元素才能配合栅栏*/
+    max-width: 100%;  /*最大宽度不能超过母元素*/
+}
+
+.navbar-brand{
+    background-image: url(./img/logo.png);
+    width: 50px;
+    background-size: 85%;  /*图片大小*/
+    background-repeat: no-repeat;  /*让图片不要重复*/
+    background-position: center center;  /*居中*/
+}
+
+img, .side-bar .list-group-item,
+.side-bar-card{
+    border: 0px;  /*爹不要边框*/
+    border-radius: 5px;    /*爹让你变圆*/
+    margin-bottom: 5px;
+} 
+.side-bar .list-group-item.active{
+    background-color:#ea0c3c; 
+} 
+
+.news-list-item .title{
+    display: block;
+    color: #444;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+.news-list-item .title:hover{
+    color: #337;
+}
+.news-list-item{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: solid 1px #888;
+}
+.news-list-item:first-child{
+    padding-top: 0px;
+}
+.news-list-item .info{
+    margin-top: 50px;
+  color: #888;
+}
+
+.avatar{
+    display: inline-block;
+}
+
+.avatar img{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}
+
+.side-bar-card{
+    background: rgba(0, 0, 0, .05);
+    margin-top: 20px;
+    padding: 20px 0;
+}
+.side-bar-card .text-lg{
+    font-size: 150%;
+}
+.side-bar-card .card-title,
+.side-bar-card .card-body .list .item{
+    padding:10px 15px;
+}
+
+.side-bar-card .card-body .list .item:hover{
+    background:rgba(0, 0, 0, .05);
+}
+.side-bar-card .card-title{
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.card-body .list .item .title{
+    padding-bottom: 5px;
+}
+.card-body .list .item .desc{
+    color: #999;
+}
+
+.news-title{
+    line-height: 1.5;
+}
+.news-status{
+    color: rgba(0, 0, 0, .5)
+}
+.news-status .label{
+    opacity: 0.8;
+}
+.news-content {
+    margin-top: 25px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.col-md-8 img {
+    padding-left: 100px;
+}
+.no-padding-h{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.footer{
+    margin-top: 20px;
+    padding: 20px 0;
+    text-align: center;
+    color: #999;
+}
+
+.container-small{
+    max-width: 500px;
+}
+
+.container-small .form-group .btn-primary {
+    background-color: #ea0c3c;
+    border: 0;
+}
+
+.container-small .form-group .btn-primary:hover{
+    background-color: #d50c37;
+    border-color: #d50c37;
+}
+
+#toggle-checkbox:checked ~ div{
+    display: block !important;
+}
+
+#toggle-lable{
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    font-size: 16px;
+    font-weight: normal;
+    display: none;
+}
+
+#toggle-lable:hover{
+    color: pink;
+}
